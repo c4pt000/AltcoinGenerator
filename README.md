@@ -1,3 +1,5 @@
+**WIP (Experimental roll your own currency)
+
 
 git clone https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
 

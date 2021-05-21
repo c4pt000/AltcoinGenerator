@@ -33,7 +33,7 @@ CHAIN="-regtest"
 
 # dont change the following variables unless you know what you are doing
 LITECOIN_BRANCH=0.18
-GENESISHZERO_REPOS=https://github.com/lhartikk/GenesisH0
+GENESISHZERO_REPOS=https://github.com/c4pt000/GenesisH0
 LITECOIN_REPOS=https://github.com/c4pt000/litecoin
 
 # warning: change this to your own pubkey to get the genesis block mining reward

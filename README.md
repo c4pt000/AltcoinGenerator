@@ -1,3 +1,41 @@
+
+git clone https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
+
+```
+./sha256.py "your unique PSZ phrase here"
+uyb3yb14u51kybjnob3l79c8zoui84o0m25uyb3yb14u51k         <- where this is the return to generate PUBKEY
+
+./pubkey -u uyb3yb14u51kybjnob3l79c8zoui84o0m25  <-generate MAIN_PUB_KEY
+uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-long
+
+edit these lines in the script to your pubkey
+
+https://github.com/c4pt000/AltcoinGenerator/edit/master/altcoin_generator.sh
+
+GENESIS_REWARD_PUBKEY=uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-long
+LITECOIN_PUB_KEY=uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-long
+
+
+
+date +%s   -> timestamp
+
+for "scrypt type coin nBit type 1e0ffff0
+------------------
+
+./generate-genesis -algo scrypt -bits 1e0ffff0 -coins <totalcoinsupply> -psz "your unique PSZ phrase here"" -timestamp 1620011758 -pubkey uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-long -threads 24
+
+
+
+block hash becomes 
+LITECOIN_MAIN_GENESIS_HASH=main-hash-here
+merkle hash becomes
+LITECOIN_MERKLE_HASH=merkle-hash-here
+```
+
+
+
+
+
 # Altcoin Generator
 Easiest way to create your own cryptocurrency.
 

@@ -299,9 +299,16 @@ newcoin_replace_vars()
     $SED -i "s/1485561600/Consensus::BIP9Deployment::ALWAYS_ACTIVE/g" src/chainparams.cpp
     # timeout of segwit is the same as csv
 
+# patched to find current assertion values in litecoin branch-0.18 not erroneous values
+
+  # defaultAssumeValid
+    $SED -i "s/0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2/0x$MAIN_GENESIS_HASH/" src/chainparams.cpp
+    $SED -i "s/0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0/0x$TEST_GENESIS_HASH/" src/chainparams.cpp
+
     # defaultAssumeValid
-    $SED -i "s/0x66f49ad85624c33e4fd61aa45c54012509ed4a53308908dd07f56346c7939273/0x$MAIN_GENESIS_HASH/" src/chainparams.cpp
-    $SED -i "s/0x1efb29c8187d5a496a33377941d1df415169c3ce5d8c05d055f25b683ec3f9a3/0x$TEST_GENESIS_HASH/" src/chainparams.cpp
+    $SED -i "s/0x0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9/0x$MERKLE_HASH/" src/chainparams.cpp
+
+
 
     # TODO: fix checkpoints
     popd

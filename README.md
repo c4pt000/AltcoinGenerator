@@ -37,10 +37,30 @@ LITECOIN_MERKLE_HASH=merkle-hash-here
 
 <br>
 <br>
+sh alt.sh start
 <br>
 <br>
 <br>
 <br>
+build in host directly after build 
+```
+yum groupinstall "C Development Tools and Libraries" -y
+yum install git-core libdb-cxx-devel libdb-cxx libdb-cxx-devel openssl-devel libevent-devel cppzmq-devel qrencode-devel qt5-qtbase-devel protobuf-devel cargo boost-devel miniupnpc-devel diffutils qt-devel qt4-devel wget miniupnpc-devel zeromq-devel boost* qt4-* qt5-* -y
+
+cd -> litecoin (or your coin name dir)
+
+sh autogen.sh 
+./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
+make -j24 clean
+make -j24
+
+find . -name '*-qt'
+
+./src/qt/litecoin-qt    (or your coin name)
+
+optional make -j24 install -> for direct system path
+
+```
 <br>
 <br>
 <br>

@@ -32,11 +32,11 @@ merkle hash becomes
 LITECOIN_MERKLE_HASH=merkle-hash-here
 ```
 
-
+```
 artwork for projects lives in /src/qt/res/icons
 via GIMP editing,
 src/init.cpp holds author info in about license;
-
+```
 
 # Altcoin Generator
 Easiest way to create your own cryptocurrency.

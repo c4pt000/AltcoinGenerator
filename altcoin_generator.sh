@@ -32,7 +32,7 @@ CHAIN="-regtest"
 
 
 # dont change the following variables unless you know what you are doing
-LITECOIN_BRANCH=0.16
+LITECOIN_BRANCH=0.18
 GENESISHZERO_REPOS=https://github.com/lhartikk/GenesisH0
 LITECOIN_REPOS=https://github.com/c4pt000/litecoin
 

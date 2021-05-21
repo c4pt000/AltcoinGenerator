@@ -34,6 +34,21 @@ merkle hash becomes
 LITECOIN_MERKLE_HASH=merkle-hash-here
 ```
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# artwork for projects lives in /src/qt/res/icons
+via GIMP editing,
 ```
 artwork for projects lives in /src/qt/res/icons
 via GIMP editing,

@@ -20,7 +20,7 @@ COIN_UNIT="MYC"
 TOTAL_SUPPLY=42000000
 MAINNET_PORT="54321"
 TESTNET_PORT="54322"
-PHRASE="Some newspaper headline that describes something that happened today"
+PHRASE="Some newspaper headline or your own personal phrase that describes something "
 # First letter of the wallet address. Check https://en.bitcoin.it/wiki/Base58Check_encoding
 PUBKEY_CHAR="20"
 # number of blocks to wait to be able to spend coinbase UTXO's
@@ -30,18 +30,31 @@ CHAIN="-regtest"
 # this is the amount of coins to get as a reward of mining the block of height 1. if not set this will default to 50
 #PREMINED_AMOUNT=10000
 
-# warning: change this to your own pubkey to get the genesis block mining reward
-GENESIS_REWARD_PUBKEY=044e0d4bc823e20e14d66396a64960c993585400c53f1e6decb273f249bfeba0e71f140ffa7316f2cdaaae574e7d72620538c3e7791ae9861dfe84dd2955fc85e8
 
 # dont change the following variables unless you know what you are doing
 LITECOIN_BRANCH=0.16
 GENESISHZERO_REPOS=https://github.com/lhartikk/GenesisH0
-LITECOIN_REPOS=https://github.com/litecoin-project/litecoin.git
-LITECOIN_PUB_KEY=040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9
-LITECOIN_MERKLE_HASH=97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9
-LITECOIN_MAIN_GENESIS_HASH=12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2
-LITECOIN_TEST_GENESIS_HASH=4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0
-LITECOIN_REGTEST_GENESIS_HASH=530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9
+LITECOIN_REPOS=https://github.com/c4pt000/litecoin
+
+# warning: change this to your own pubkey to get the genesis block mining reward
+
+GENESIS_REWARD_PUBKEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
+
+LITECOIN_PUB_KEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
+
+
+your merkle hash and main block hash here
+
+
+LITECOIN_MERKLE_HASH=97ddfbbae6be97-your merkle-hash-12a765e3-97ddfbbae6be97-your-merkle-hash
+LITECOIN_MAIN_GENESIS_HASH=97ddfbbae6be97-your-main-hash-12a765e3-97ddfbbae6be97-your-main-hash
+
+
+LITECOIN_TEST_GENESIS_HASH=
+LITECOIN_REGTEST_GENESIS_HASH=
+
+
+
 MINIMUM_CHAIN_WORK_MAIN=0x0000000000000000000000000000000000000000000000c1bfe2bbe614f41260
 MINIMUM_CHAIN_WORK_TEST=0x000000000000000000000000000000000000000000000000001df7b5aa1700ce
 COIN_NAME_LOWER=$(echo $COIN_NAME | tr '[:upper:]' '[:lower:]')
@@ -60,14 +73,15 @@ docker_build_image()
         if [ ! -f $DOCKER_IMAGE_LABEL/Dockerfile ]; then
             mkdir -p $DOCKER_IMAGE_LABEL
             cat <<EOF > $DOCKER_IMAGE_LABEL/Dockerfile
-FROM ubuntu:16.04
-RUN echo deb http://ppa.launchpad.net/bitcoin/bitcoin/ubuntu xenial main >> /etc/apt/sources.list
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D46F45428842CE5E
-RUN apt-get update
-RUN apt-get -y install ccache git libboost-system1.58.0 libboost-filesystem1.58.0 libboost-program-options1.58.0 libboost-thread1.58.0 libboost-chrono1.58.0 libssl1.0.0 libevent-pthreads-2.0-5 libevent-2.0-5 build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libzmq3-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev python-pip
+
+FROM fedora:28
+RUN yum groupinstall "C Development Tools and Libraries" -y
+RUN yum install git-core libdb-cxx-devel libdb-cxx openssl-devel libevent-devel \
+ cppzmq-devel qrencode-devel protobuf-devel cargo boost* boost-devel miniupnpc-devel.x86_64 qt-devel qt4-devel qt5-* python2-devel python2 python2-pip -y
 RUN pip install construct==2.5.2 scrypt
 EOF
         fi 
+
         docker build --label $DOCKER_IMAGE_LABEL --tag $DOCKER_IMAGE_LABEL $DIRNAME/$DOCKER_IMAGE_LABEL/
     else
         echo Docker image already built
@@ -187,17 +201,17 @@ newcoin_replace_vars()
         echo "Warning: $COIN_NAME_LOWER already existing. Not replacing any values"
         return 0
     fi
-    if [ ! -d "litecoin-master" ]; then
+    if [ ! -d "litecoin" ]; then
         # clone litecoin and keep local cache
-        git clone -b $LITECOIN_BRANCH $LITECOIN_REPOS litecoin-master
+        git clone -b $LITECOIN_BRANCH $LITECOIN_REPOS litecoin
     else
         echo "Updating master branch"
-        pushd litecoin-master
+        pushd litecoin
         git pull
         popd
     fi
 
-    git clone -b $LITECOIN_BRANCH litecoin-master $COIN_NAME_LOWER
+    git clone -b $LITECOIN_BRANCH litecoin $COIN_NAME_LOWER
 
     pushd $COIN_NAME_LOWER
 
@@ -298,10 +312,10 @@ build_new_coin()
     # only run autogen.sh/configure if not done previously
     if [ ! -e $COIN_NAME_LOWER/Makefile ]; then
         docker_run "cd /$COIN_NAME_LOWER ; bash  /$COIN_NAME_LOWER/autogen.sh"
-        docker_run "cd /$COIN_NAME_LOWER ; bash  /$COIN_NAME_LOWER/configure --disable-tests --disable-bench"
+        docker_run "cd /$COIN_NAME_LOWER ; bash  /$COIN_NAME_LOWER/configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench"
     fi
-    # always build as the user could have manually changed some files
-    docker_run "cd /$COIN_NAME_LOWER ; make -j2"
+    # always build as the user could have manually changed some files 200 cores if the system has 200 cores will max out at max cores 8, 16, 24 whatever max core 
+    docker_run "cd /$COIN_NAME_LOWER ; make -j200"
 }
 
 

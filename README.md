@@ -18,8 +18,11 @@ cd docker-BLOCKCHAIN-GENERATOR
 
 ./pubkey -u uyb3yb14u51kyoui84o0m25 <-generate MAIN_PUB_KEY 
 ```
+cd ..
 <br>
 yum install nano -y
+<br>
+* edit script with PUBKEY from pubkey -u output
 <br>
 nano altcoin_generator.sh
 <br>

@@ -1,4 +1,11 @@
 **WIP (Experimental roll your own currency)
+* 05-21-2021
+to do fix automatic assertion point for block 0 for script to auto inject values,
+```
+ chainparams.cpp:119: CMainParams::CMainParams(): Assertion `consensus.hashGenesisBlock == uint256S("0x829661f4166c0a5da89f184b0ca0c6769db139a04a94fbe001da656c1fa16ffd")' failed.
+/bin/bash: line 1:     7 Aborted                 ./src/coind -listen -noconnect -bind=172.18.0.4 -addnode=172.18.0.1 -addnode=172.18.0.2 -addnode=172.18.0.3 -addnode=172.18.0.5
+```
+
 
 wget https://github.com/c4pt000/docker-cryptocurrency-builder-AltcoinGenerator-fedora28-node/blob/master/altcoin_generator.sh
 <br>

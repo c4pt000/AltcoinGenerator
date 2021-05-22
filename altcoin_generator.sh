@@ -36,20 +36,15 @@ LITECOIN_BRANCH=0.18
 GENESISHZERO_REPOS=https://github.com/c4pt000/GenesisH0
 LITECOIN_REPOS=https://github.com/c4pt000/litecoin
 
-# warning: change this to your own pubkey to get the genesis block mining reward
+# MUST CHANGE THESE TWO LINES MUST MATCH! warning: change this to your own pubkey to get the genesis block mining reward
 
 GENESIS_REWARD_PUBKEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
-
 LITECOIN_PUB_KEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
 
 
-your merkle hash and main block hash here
-
-
-LITECOIN_MERKLE_HASH=97ddfbbae6be97-your merkle-hash-12a765e3-97ddfbbae6be97-your-merkle-hash
-LITECOIN_MAIN_GENESIS_HASH=97ddfbbae6be97-your-main-hash-12a765e3-97ddfbbae6be97-your-main-hash
-
-
+#LEAVE THESE four lines blank the script will automatically fill these lines
+LITECOIN_MERKLE_HASH=
+LITECOIN_MAIN_GENESIS_HASH=
 LITECOIN_TEST_GENESIS_HASH=
 LITECOIN_REGTEST_GENESIS_HASH=
 

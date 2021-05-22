@@ -306,7 +306,7 @@ newcoin_replace_vars()
     $SED -i "s/0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0/0x$TEST_GENESIS_HASH/" src/chainparams.cpp
 
     # defaultAssumeValid
-    $SED -i "s/0x0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9/0x$MERKLE_HASH/" src/chainparams.cpp
+    $SED -i "s/0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9/0x$MERKLE_HASH/" src/chainparams.cpp
 
 
 

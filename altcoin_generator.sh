@@ -13,7 +13,9 @@
 # instantly. If you wish to switch to the main network, simply change the 
 # CHAIN variable below
 
-# change the following variables to match your new coin
+
+
+# EDIT the following variables to match your new coin
 COIN_NAME="MyCoin"
 COIN_UNIT="MYC"
 # 42 million coins at total (litecoin total supply is 84000000)
@@ -30,16 +32,23 @@ CHAIN="-regtest"
 # this is the amount of coins to get as a reward of mining the block of height 1. if not set this will default to 50
 #PREMINED_AMOUNT=10000
 
+# MUST CHANGE THESE TWO LINES MUST MATCH! warning: change this to your own pubkey to get the genesis block mining reward
+GENESIS_REWARD_PUBKEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
+LITECOIN_PUB_KEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
+
+
+
+
+
+
+
+# DONT EDIT AFTER THIS LINE
+#--------------------------
 
 # dont change the following variables unless you know what you are doing
 LITECOIN_BRANCH=0.18
 GENESISHZERO_REPOS=https://github.com/c4pt000/GenesisH0
 LITECOIN_REPOS=https://github.com/c4pt000/litecoin
-
-# MUST CHANGE THESE TWO LINES MUST MATCH! warning: change this to your own pubkey to get the genesis block mining reward
-
-GENESIS_REWARD_PUBKEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
-LITECOIN_PUB_KEY=040184710fa689ad502-YOUR-PUBKEY-HERE-f13f8d45b8c857f-YOUR-PUBKEY-HERE-eb4b10f4d46-YOUR-PUBKEY-HERE-45070ac7b03a9
 
 
 #LEAVE THESE four lines blank the script will automatically fill these lines

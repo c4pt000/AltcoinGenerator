@@ -6,9 +6,9 @@ to do fix automatic assertion point for block 0 for script to auto inject values
 /bin/bash: line 1:     7 Aborted                 ./src/coind -listen -noconnect -bind=172.18.0.4 -addnode=172.18.0.1 -addnode=172.18.0.2 -addnode=172.18.0.3 -addnode=172.18.0.5
 ```
 
-
-wget https://github.com/c4pt000/docker-cryptocurrency-builder-AltcoinGenerator-fedora28-node/blob/master/altcoin_generator.sh
-<br>
+```
+wget https://raw.githubusercontent.com/c4pt000/AlternativeCryptoCurrencyBuilder-scrypt/master/altcoin_generator.sh
+```
 <br>
 <br>
 build in host directly after build 

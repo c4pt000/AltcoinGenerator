@@ -23,6 +23,7 @@ cd ..
 yum install nano -y
 <br>
 * edit script with PUBKEY from pubkey -u output
+* edit script with unique psz phrase  "your unique PSZ phrase here" from sha256.py creation of phrase hash
 <br>
 nano altcoin_generator.sh
 <br>

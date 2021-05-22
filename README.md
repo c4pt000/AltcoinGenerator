@@ -10,17 +10,26 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf install docker-ce docker-ce-cli containerd.io
 ```
 git clone https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
+<br>
 cd docker-BLOCKCHAIN-GENERATOR
+<br>
 ```
 ./sha256.py "your unique PSZ phrase here" 
 
 ./pubkey -u uyb3yb14u51kyoui84o0m25 <-generate MAIN_PUB_KEY 
-
-
 ```
+<br>
+yum install nano -y
+<br>
+nano altcoin_generator.sh
+<br>
+sh altcoin_generator.sh start
+<br>
 
 * 05-21-2021
+<br>
 to do fix automatic assertion point for block 0 for script to auto inject values,
+<br>
 ```
  chainparams.cpp:119: CMainParams::CMainParams(): Assertion `consensus.hashGenesisBlock == uint256S("0x829661f4166c0a5da89f184b0ca0c6769db139a04a94fbe001da656c1fa16ffd")' failed.
 /bin/bash: line 1:     7 Aborted                 ./src/coind -listen -noconnect -bind=172.18.0.4 -addnode=172.18.0.1 -addnode=172.18.0.2 -addnode=172.18.0.3 -addnode=172.18.0.5

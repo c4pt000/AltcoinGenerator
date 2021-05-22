@@ -9,7 +9,15 @@ sudo dnf -y install dnf-plugins-core
     
 sudo dnf install docker-ce docker-ce-cli containerd.io
 ```
+git clone https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
+cd docker-BLOCKCHAIN-GENERATOR
+```
+./sha256.py "your unique PSZ phrase here" 
 
+./pubkey -u uyb3yb14u51kyoui84o0m25 <-generate MAIN_PUB_KEY 
+
+
+```
 
 * 05-21-2021
 to do fix automatic assertion point for block 0 for script to auto inject values,

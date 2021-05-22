@@ -29,6 +29,11 @@ nano altcoin_generator.sh
 <br>
 sh altcoin_generator.sh start
 <br>
+<br>
+<br>
+<br>
+<br>
+
 
 * 05-21-2021
 <br>

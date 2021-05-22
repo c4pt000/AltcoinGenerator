@@ -22,6 +22,8 @@ COIN_UNIT="MYC"
 TOTAL_SUPPLY=42000000
 MAINNET_PORT="54321"
 TESTNET_PORT="54322"
+
+# dont exceed 35 characters with spaces
 PHRASE="Some newspaper headline or your own personal phrase that describes something "
 # First letter of the wallet address. Check https://en.bitcoin.it/wiki/Base58Check_encoding
 PUBKEY_CHAR="20"

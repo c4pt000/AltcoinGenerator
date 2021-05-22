@@ -1,0 +1,125 @@
+2021-05-22T23:34:51Z 
+
+
+
+
+2021-05-22T23:34:51Z RadioCoin Core version v0.18.1.0-e14de66c1-dirty (release build)
+2021-05-22T23:34:51Z InitParameterInteraction: parameter interaction: -connect set -> setting -dnsseed=0
+2021-05-22T23:34:51Z Assuming ancestors of block b34a457c601ef8ce3294116e3296078797be7ded1b0d12515395db9ab5e93ab8 have valid signatures.
+2021-05-22T23:34:51Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000002ee655bf00bf13b4cca
+2021-05-22T23:34:51Z Using the 'sse4(1way),sse41(4way),avx2(8way)' SHA256 implementation
+2021-05-22T23:34:51Z Using RdRand as an additional entropy source
+2021-05-22T23:34:51Z Default data directory /root/.radiocoin
+2021-05-22T23:34:51Z Using data directory /root/.radiocoin
+2021-05-22T23:34:51Z Config file: /root/.radiocoin/radiocoin.conf
+2021-05-22T23:34:51Z Using at most 125 automatic connections (1048576 file descriptors available)
+2021-05-22T23:34:51Z Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2021-05-22T23:34:51Z Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2021-05-22T23:34:51Z Using 16 threads for script verification
+2021-05-22T23:34:51Z scheduler thread start
+2021-05-22T23:34:51Z libevent: getaddrinfo: address family for nodename not supported
+2021-05-22T23:34:51Z Binding RPC on address ::1 port 9332 failed.
+2021-05-22T23:34:51Z HTTP: creating work queue of depth 16
+2021-05-22T23:34:51Z Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcauth for rpcauth auth generation.
+2021-05-22T23:34:51Z HTTP: starting 4 worker threads
+2021-05-22T23:34:51Z scrypt: using scrypt-sse2 as built.
+2021-05-22T23:34:51Z Using wallet directory /root/.radiocoin
+2021-05-22T23:34:51Z init message: Verifying wallet(s)...
+2021-05-22T23:34:51Z Using BerkeleyDB version Berkeley DB 5.3.28: (September  9, 2013)
+2021-05-22T23:34:51Z Using wallet /root/.radiocoin
+2021-05-22T23:34:51Z BerkeleyEnvironment::Open: LogDir=/root/.radiocoin/database ErrorFile=/root/.radiocoin/db.log
+2021-05-22T23:34:51Z init message: Loading banlist...
+2021-05-22T23:34:51Z ERROR: DeserializeFileDB: Failed to open file /root/.radiocoin/banlist.dat
+2021-05-22T23:34:51Z Invalid or missing banlist.dat; recreating
+2021-05-22T23:34:51Z Cache configuration:
+2021-05-22T23:34:51Z * Using 2.0 MiB for block index database
+2021-05-22T23:34:51Z * Using 8.0 MiB for chain state database
+2021-05-22T23:34:51Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2021-05-22T23:34:51Z init message: Loading block index...
+2021-05-22T23:34:51Z Opening LevelDB in /root/.radiocoin/blocks/index
+2021-05-22T23:34:51Z Opened LevelDB successfully
+2021-05-22T23:34:51Z Using obfuscation key for /root/.radiocoin/blocks/index: 0000000000000000
+2021-05-22T23:34:51Z LoadBlockIndexDB: last block file = 0
+2021-05-22T23:34:51Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2021-05-22T23:34:51Z Checking all blk files are present...
+2021-05-22T23:34:51Z Initializing databases...
+2021-05-22T23:34:51Z Pre-allocating up to position 0x1000000 in blk00000.dat
+2021-05-22T23:34:51Z Opening LevelDB in /root/.radiocoin/chainstate
+2021-05-22T23:34:52Z Opened LevelDB successfully
+2021-05-22T23:34:52Z Wrote new obfuscate key for /root/.radiocoin/chainstate: 37afe0ac7e27bc82
+2021-05-22T23:34:52Z Using obfuscation key for /root/.radiocoin/chainstate: 37afe0ac7e27bc82
+2021-05-22T23:34:52Z init message: Rewinding blocks...
+2021-05-22T23:34:52Z  block index             710ms
+2021-05-22T23:34:52Z init message: Loading wallet...
+2021-05-22T23:34:52Z BerkeleyEnvironment::Open: LogDir=/root/.radiocoin/database ErrorFile=/root/.radiocoin/db.log
+2021-05-22T23:34:52Z [default wallet] nFileVersion = 180100
+2021-05-22T23:34:52Z [default wallet] Keys: 0 plaintext, 0 encrypted, 0 w/ metadata, 0 total. Unknown wallet records: 0
+2021-05-22T23:34:52Z [default wallet] Performing wallet upgrade to 169900
+2021-05-22T23:34:54Z [default wallet] keypool added 2000 keys (1000 internal), size=2000 (1000 internal)
+2021-05-22T23:34:55Z [default wallet] Wallet completed loading in            3124ms
+2021-05-22T23:34:55Z [default wallet] setKeyPool.size() = 2000
+2021-05-22T23:34:55Z [default wallet] mapWallet.size() = 0
+2021-05-22T23:34:55Z [default wallet] mapAddressBook.size() = 0
+2021-05-22T23:34:55Z ERROR: ReadBlockFromDisk: Errors in block header at CDiskBlockPos(nFile=0, nPos=8)
+2021-05-22T23:34:55Z *** Failed to read block
+2021-05-22T23:34:55Z Error: Error: A fatal internal error occurred, see debug.log for details
+2021-05-22T23:36:04Z 
+
+
+
+
+2021-05-22T23:36:04Z RadioCoin Core version v0.18.1.0-e14de66c1-dirty (release build)
+2021-05-22T23:36:04Z InitParameterInteraction: parameter interaction: -connect set -> setting -dnsseed=0
+2021-05-22T23:36:04Z Assuming ancestors of block b34a457c601ef8ce3294116e3296078797be7ded1b0d12515395db9ab5e93ab8 have valid signatures.
+2021-05-22T23:36:04Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000002ee655bf00bf13b4cca
+2021-05-22T23:36:04Z Using the 'sse4(1way),sse41(4way),avx2(8way)' SHA256 implementation
+2021-05-22T23:36:04Z Using RdRand as an additional entropy source
+2021-05-22T23:36:04Z Default data directory /root/.radiocoin
+2021-05-22T23:36:04Z Using data directory /root/.radiocoin
+2021-05-22T23:36:04Z Config file: /root/.radiocoin/radiocoin.conf
+2021-05-22T23:36:04Z Using at most 125 automatic connections (1048576 file descriptors available)
+2021-05-22T23:36:04Z Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2021-05-22T23:36:04Z Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2021-05-22T23:36:04Z Using 16 threads for script verification
+2021-05-22T23:36:04Z scheduler thread start
+2021-05-22T23:36:04Z libevent: getaddrinfo: address family for nodename not supported
+2021-05-22T23:36:04Z Binding RPC on address ::1 port 9332 failed.
+2021-05-22T23:36:04Z HTTP: creating work queue of depth 16
+2021-05-22T23:36:04Z Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcauth for rpcauth auth generation.
+2021-05-22T23:36:04Z HTTP: starting 4 worker threads
+2021-05-22T23:36:04Z scrypt: using scrypt-sse2 as built.
+2021-05-22T23:36:04Z Using wallet directory /root/.radiocoin
+2021-05-22T23:36:04Z init message: Verifying wallet(s)...
+2021-05-22T23:36:04Z Using BerkeleyDB version Berkeley DB 5.3.28: (September  9, 2013)
+2021-05-22T23:36:04Z Using wallet /root/.radiocoin
+2021-05-22T23:36:04Z BerkeleyEnvironment::Open: LogDir=/root/.radiocoin/database ErrorFile=/root/.radiocoin/db.log
+2021-05-22T23:36:04Z init message: Loading banlist...
+2021-05-22T23:36:04Z Cache configuration:
+2021-05-22T23:36:04Z * Using 2.0 MiB for block index database
+2021-05-22T23:36:04Z * Using 8.0 MiB for chain state database
+2021-05-22T23:36:04Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2021-05-22T23:36:04Z init message: Loading block index...
+2021-05-22T23:36:04Z Opening LevelDB in /root/.radiocoin/blocks/index
+2021-05-22T23:36:05Z Opened LevelDB successfully
+2021-05-22T23:36:05Z Using obfuscation key for /root/.radiocoin/blocks/index: 0000000000000000
+2021-05-22T23:36:05Z LoadBlockIndexDB: last block file = 0
+2021-05-22T23:36:05Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2021-05-22T23:36:05Z Checking all blk files are present...
+2021-05-22T23:36:05Z Initializing databases...
+2021-05-22T23:36:05Z Pre-allocating up to position 0x1000000 in blk00000.dat
+2021-05-22T23:36:05Z Opening LevelDB in /root/.radiocoin/chainstate
+2021-05-22T23:36:06Z Opened LevelDB successfully
+2021-05-22T23:36:06Z Using obfuscation key for /root/.radiocoin/chainstate: 37afe0ac7e27bc82
+2021-05-22T23:36:06Z init message: Rewinding blocks...
+2021-05-22T23:36:06Z  block index            1890ms
+2021-05-22T23:36:06Z init message: Loading wallet...
+2021-05-22T23:36:06Z BerkeleyEnvironment::Open: LogDir=/root/.radiocoin/database ErrorFile=/root/.radiocoin/db.log
+2021-05-22T23:36:06Z [default wallet] nFileVersion = 180100
+2021-05-22T23:36:06Z [default wallet] Keys: 2001 plaintext, 0 encrypted, 2001 w/ metadata, 2001 total. Unknown wallet records: 0
+2021-05-22T23:36:06Z [default wallet] Wallet completed loading in              98ms
+2021-05-22T23:36:06Z [default wallet] setKeyPool.size() = 2000
+2021-05-22T23:36:06Z [default wallet] mapWallet.size() = 0
+2021-05-22T23:36:06Z [default wallet] mapAddressBook.size() = 0
+2021-05-22T23:36:06Z ERROR: ReadBlockFromDisk: Errors in block header at CDiskBlockPos(nFile=0, nPos=8)
+2021-05-22T23:36:06Z *** Failed to read block
+2021-05-22T23:36:06Z Error: Error: A fatal internal error occurred, see debug.log for details

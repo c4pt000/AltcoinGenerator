@@ -1,4 +1,16 @@
-**WIP (Experimental roll your own currency)
+**WIP (Experimental roll your own currency)  REQUIRES docker-ce
+
+docker install fedora-34
+```
+sudo dnf -y install dnf-plugins-core
+ sudo dnf config-manager \
+    --add-repo \
+    https://download.docker.com/linux/fedora/docker-ce.repo
+    
+sudo dnf install docker-ce docker-ce-cli containerd.io
+```
+
+
 * 05-21-2021
 to do fix automatic assertion point for block 0 for script to auto inject values,
 ```

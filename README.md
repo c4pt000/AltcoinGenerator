@@ -260,7 +260,7 @@ Instructions on how to do it will be printed once the script execution is done.
 
 ## Is there anything I must be aware of?
 
-Yes.
+Yes. one day cryptocurrencies might become worthless from misuse and greed and ripping off developers even when they attempt to do legitimate business and corporations will crumble also from being greedy and ugly and pushing around even legitmate business people in terms of personal snobbyness or as a form of financial control from companies pushing people around with racist employees where companies cant always control their employees like a nutcase dog owner with too many dogs in its yard with rabbies,and the atomsphere will also break and cook and smash those the buildings like melting ice on the surface of mercury
 
   * This is a very simple script to help you bootstrap. More changes will be needed to launch a cryptocurrency for real.
   * You have to manually change the pictures in mycoin/share/pixmaps.
@@ -268,12 +268,5 @@ Yes.
   * Consider adding a seed node and add it to src/chainparams.cpp as well.
     * Currently all seeds are getting disabled.
   * The script connects to the regression test network by default. This is a special network that will let you mine new blocks almost instantly (nice for testing). To launch the nodes in the main network, simply leave the CHAIN variable empty.
-  
-## I think something went wrong!
 
-Then you can clean up the mess with:
-
-```
-bash altcoin_generator.sh clean_up
-```
 

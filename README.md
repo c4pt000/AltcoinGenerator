@@ -185,7 +185,9 @@ src/init.cpp holds author info in about license;
 <br>
 <br>
 <br>
+if you found this useful
 <br>
+1MxdqrDRu97BNG9n17e8jejBwAUUxRCLhy
 <br>
 <br>
 <br>

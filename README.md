@@ -65,7 +65,7 @@ creating nodes
 <br>
 https://medium.com/@kay.odenthal_25114/create-a-private-bitcoin-network-with-simulated-mining-b35f5b03e534
 
-<br>
+
 # requires mining the first block
 <br>
 https://bitcoin.stackexchange.com/questions/80810/error-acceptblock-high-hash-proof-of-work-failed-code-16

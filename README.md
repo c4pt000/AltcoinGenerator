@@ -52,17 +52,23 @@ make -j24
 ./src/qt/yourcoin-qt
  
 or make -j24 install       -> for direct install to /usr
+```
+<br>
+creating nodes
+<br>
+https://medium.com/@kay.odenthal_25114/create-a-private-bitcoin-network-with-simulated-mining-b35f5b03e534
 
 <br>
-requires mining the first block
+# requires mining the first block
 <br>
 https://bitcoin.stackexchange.com/questions/80810/error-acceptblock-high-hash-proof-of-work-failed-code-16
-<br>
 
+
+```
 make -j24 clean      (to clean project)
 make -j24            (to build project)
 make -j24 install    (to reinstall to system path /usr)
-
+```
 * 05-21-2021
 <br>
 to do fix automatic assertion point for block 0 for script to auto inject values,

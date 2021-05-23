@@ -147,7 +147,6 @@ LITECOIN_PUB_KEY=uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u
 ```
 
 
-date +%s   -> timestamp
 
 for "scrypt type coin nBit type 1e0ffff0
 ------------------

@@ -111,6 +111,8 @@ docker_stop_nodes()
     echo "Stopping all docker nodes"
     for id in $(docker ps -q -a  -f ancestor=$DOCKER_IMAGE_LABEL); do
         docker stop $id
+        docker container prune -f
+        docker image prune -f
     done
 }
 

@@ -1,3 +1,6 @@
+
+./src/litecoind | grep _ > file.txt && cat file.txt | tail -n 12
+
 https://medium.com/@jordan.baczuk/how-to-fork-bitcoin-part-2-59b9eddb49a4
 
 https://jbaczuk.github.io/blockchain_fundamentals/3-Development/3.2-Design.html

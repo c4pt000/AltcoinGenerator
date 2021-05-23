@@ -16,7 +16,7 @@ https://jbaczuk.github.io/blockchain_fundamentals/3-Development/3.2-Design.html
 
 https://bitcoin.stackexchange.com/questions/80810/error-acceptblock-high-hash-proof-of-work-failed-code-16
 
-**WIP (Experimental roll your own currency)  REQUIRES docker-ce
+# **WIP (Experimental roll your own currency)  REQUIRES docker-ce
 
 docker install fedora-34
 ```

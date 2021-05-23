@@ -36,6 +36,15 @@ nano altcoin_generator.sh
 sh altcoin_generator.sh start
 <br>
 <br>
+change to "yourcoin"
+ sh autogen.sh 
+ ./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
+ make -j24 clean
+ make -j24 
+ ./src/qt/yourcoin-qt
+ 
+ or make -j24 install       -> for direct install to /usr
+
 <br>
 <br>
 <br>

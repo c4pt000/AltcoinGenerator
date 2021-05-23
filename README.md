@@ -129,6 +129,7 @@ optional make -j24 install -> for direct system path
 git clone https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
 
 # edit script 
+```
 nano altcoin_generator.sh 
 
 ./sha256.py "your unique PSZ phrase here"

@@ -41,7 +41,7 @@ sh altcoin_generator.sh start
 ```
 yum groupinstall "C Development Tools and Libraries" -y
 yum install git-core libdb-cxx-devel libdb-cxx openssl-devel libevent-devel \
-cppzmq-devel qrencode-devel protobuf-devel cargo boost* boost-devel miniupnpc-devel.x86_64 qt-devel qt4-devel qt5-* -y
+cppzmq-devel qrencode-devel protobuf-devel cargo boost* boost-devel miniupnpc-devel.x86_64 qt-devel qt4-devel -y
 
 change to "yourcoin" to build on host
 
@@ -98,7 +98,7 @@ wget https://raw.githubusercontent.com/c4pt000/AlternativeCryptoCurrencyBuilder-
 build in host directly after build 
 ```
 yum groupinstall "C Development Tools and Libraries" -y
-yum install git-core libdb-cxx-devel libdb-cxx libdb-cxx-devel openssl-devel libevent-devel cppzmq-devel qrencode-devel qt5-qtbase-devel protobuf-devel cargo boost-devel miniupnpc-devel diffutils qt-devel qt4-devel wget miniupnpc-devel zeromq-devel boost* qt4-* qt5-* -y
+yum install git-core libdb-cxx-devel libdb-cxx libdb-cxx-devel openssl-devel libevent-devel cppzmq-devel qrencode-devel qt5-qtbase-devel protobuf-devel cargo boost-devel miniupnpc-devel diffutils qt-devel qt4-devel wget miniupnpc-devel zeromq-devel boost* qt4-* -y
 
 cd -> litecoin (or your coin name dir)
 

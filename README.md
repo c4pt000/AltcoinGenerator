@@ -52,6 +52,7 @@ make -j24
 ./src/qt/yourcoin-qt
  
 or make -j24 install       -> for direct install to /usr
+yourcoin-qt
 ```
 <br>
 creating nodes

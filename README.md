@@ -2,6 +2,9 @@
 ./src/radiocoind | grep _ > file.txt && cat file.txt | tail -n 12 > network-hash-assert-replacement.txt && cat network-hash-assert-replacement.txt
 
 assert replacement, main, test, reg
+rebuild
+make -j24 clean
+make -j24
 mine block0,block1 cpp_miner
 ```
 

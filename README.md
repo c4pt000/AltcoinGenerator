@@ -103,7 +103,7 @@ to do fix automatic assertion point for block 0 for script to auto inject values
 ```
 
 ```
-wget https://raw.githubusercontent.com/c4pt000/AlternativeCryptoCurrencyBuilder-scrypt/master/altcoin_generator.sh
+wget https://raw.githubusercontent.com/c4pt000/AlternativeCryptoCurrencyBuilder/master/altcoin_generator.sh
 ```
 <br>
 <br>
@@ -146,14 +146,14 @@ https://github.com/c4pt000/AltcoinGenerator/edit/master/altcoin_generator.sh
 
 GENESIS_REWARD_PUBKEY=uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-long
 LITECOIN_PUB_KEY=uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-long
-
+```
 
 
 date +%s   -> timestamp
 
 for "scrypt type coin nBit type 1e0ffff0
 ------------------
-
+```
 ./generate-genesis -algo scrypt -bits 1e0ffff0 -coins <totalcoinsupply> -psz "your unique PSZ phrase here"" -timestamp 1620011758 -pubkey uyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-longuyb3yb14u51kybjnob3l79c8zoui84o0m25-pubkey-return-long -threads 24
 
 

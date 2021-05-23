@@ -71,6 +71,15 @@ https://medium.com/@kay.odenthal_25114/create-a-private-bitcoin-network-with-sim
 https://bitcoin.stackexchange.com/questions/80810/error-acceptblock-high-hash-proof-of-work-failed-code-16
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 * 05-21-2021
 <br>

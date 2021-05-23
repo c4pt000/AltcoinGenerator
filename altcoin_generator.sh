@@ -404,6 +404,28 @@ case $1 in
         newcoin_replace_vars
         build_new_coin
         docker_create_network
+        sleep 5s
+        echo "Building for fedora 34 host"
+yum groupinstall "C Development Tools and Libraries" -y
+yum install git-core libdb-cxx-devel libdb-cxx openssl-devel libevent-devel \
+cppzmq-devel qrencode-devel protobuf-devel cargo boost* boost-devel miniupnpc-devel.x86_64 qt-devel qt4-devel -y
+cd ${COIN_NAME_LOWER}
+sh autogen.sh 
+./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
+make -j200 clean
+make -j200
+echo "cd yourcoin"
+echo "./src/qt/yourcoin-qt > network-hashes.txt "
+sleep 2s
+echo "printing network hashes for your coin"
+cat network-hashes.txt
+sleep 2s
+echo "make -j200 install to deploy to host"
+
+echo "to rebuild:"
+echo "make -j200 clean"
+echo "make -j200 uninstall"
+echo "make -j200 "
 
         docker_run_node 2 "cd /$COIN_NAME_LOWER ; ./src/${COIN_NAME_LOWER}d $CHAIN -listen -noconnect -bind=$DOCKER_NETWORK.2 -addnode=$DOCKER_NETWORK.1 -addnode=$DOCKER_NETWORK.3 -addnode=$DOCKER_NETWORK.4 -addnode=$DOCKER_NETWORK.5 | grep _ > file.txt && cat file.txt | tail -n 12 > network-hash-assert-replacement.txt && cat network-hash-assert-replacement.txt &"
         docker_run_node 3 "cd /$COIN_NAME_LOWER ; ./src/${COIN_NAME_LOWER}d $CHAIN -listen -noconnect -bind=$DOCKER_NETWORK.3 -addnode=$DOCKER_NETWORK.1 -addnode=$DOCKER_NETWORK.2 -addnode=$DOCKER_NETWORK.4 -addnode=$DOCKER_NETWORK.5 | grep _ > file.txt && cat file.txt | tail -n 12 > network-hash-assert-replacement.txt && cat network-hash-assert-replacement.txt &"
@@ -431,27 +453,7 @@ case $1 in
 
 
                         
-echo "Building for fedora 34 host"
-yum groupinstall "C Development Tools and Libraries" -y
-yum install git-core libdb-cxx-devel libdb-cxx openssl-devel libevent-devel \
-cppzmq-devel qrencode-devel protobuf-devel cargo boost* boost-devel miniupnpc-devel.x86_64 qt-devel qt4-devel -y
-cd ${COIN_NAME_LOWER}
-sh autogen.sh 
-./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
-make -j200 clean
-make -j200
-echo "cd yourcoin"
-echo "./src/qt/yourcoin-qt > network-hashes.txt "
-sleep 2s
-echo "printing network hashes for your coin"
-cat network-hashes.txt
-sleep 2s
-echo "make -j200 install to deploy to host"
 
-echo "to rebuild:"
-echo "make -j200 clean"
-echo "make -j200 uninstall"
-echo "make -j200 "
 
 
 

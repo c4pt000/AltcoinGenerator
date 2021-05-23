@@ -1,3 +1,5 @@
+requires Fedora/RHEL/CentOS variant
+
 ```
 ./src/radiocoind | grep _ > file.txt && cat file.txt | tail -n 12 > network-hash-assert-replacement.txt && cat network-hash-assert-replacement.txt
 

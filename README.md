@@ -206,12 +206,12 @@ src/init.cpp holds author info in about license;
 <br>
 <br>
 <br>
-an improvement to a pre-existing tool to help designers trying to establish their own cryptocurrency 
 <br>
 
-
 # Altcoin Generator
-Easiest way to create your own cryptocurrency.
+
+# an improvement to a pre-existing tool to help designers trying to establish their own cryptocurrency 
+
 
 ## What does this script do?
 

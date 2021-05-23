@@ -419,7 +419,7 @@ sh autogen.sh
 ./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
 make -j200 clean
 make -j200
-./src/${COIN_NAME_LOWER}-qt > network-hashes.txt
+./src/qt/${COIN_NAME_LOWER}-qt > network-hashes.txt
 sleep 2s
 echo "printing network hashes for your coin"
 cat network-hashes.txt

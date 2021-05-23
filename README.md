@@ -126,14 +126,12 @@ find . -name '*-qt'
 optional make -j24 install -> for direct system path
 
 ```
-
+```
 git clone https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
 
-# edit script nano altcoin_generator.sh 
+# edit script 
+nano altcoin_generator.sh 
 
-
-
-```
 ./sha256.py "your unique PSZ phrase here"
 uyb3yb14u51kybjnob3l79c8zoui84o0m25uyb3yb14u51k         <- where this is the return to generate PUBKEY
 

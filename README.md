@@ -9,7 +9,7 @@ make -j24 clean
 make -j24
 mine block0,block1 cpp_miner
 ```
-
+ 
 https://medium.com/@jordan.baczuk/how-to-fork-bitcoin-part-2-59b9eddb49a4
 
 https://jbaczuk.github.io/blockchain_fundamentals/3-Development/3.2-Design.html

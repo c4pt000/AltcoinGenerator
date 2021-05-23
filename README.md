@@ -36,19 +36,32 @@ nano altcoin_generator.sh
 sh altcoin_generator.sh start
 <br>
 <br>
-change to "yourcoin"
- sh autogen.sh 
- ./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
- make -j24 clean
- make -j24 
- ./src/qt/yourcoin-qt
+
+```
+yum groupinstall "C Development Tools and Libraries" -y
+yum install git-core libdb-cxx-devel libdb-cxx openssl-devel libevent-devel \
+cppzmq-devel qrencode-devel protobuf-devel cargo boost* boost-devel miniupnpc-devel.x86_64 qt-devel qt4-devel qt5-* python2-devel -y
+
+
+change to "yourcoin" to build on host
+
+sh autogen.sh 
+./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
+make -j24 clean
+make -j24 
+./src/qt/yourcoin-qt
  
- or make -j24 install       -> for direct install to /usr
+or make -j24 install       -> for direct install to /usr
 
 <br>
+requires mining the first block
 <br>
+https://bitcoin.stackexchange.com/questions/80810/error-acceptblock-high-hash-proof-of-work-failed-code-16
 <br>
 
+make -j24 clean      (to clean project)
+make -j24            (to build project)
+make -j24 install    (to reinstall to system path /usr)
 
 * 05-21-2021
 <br>

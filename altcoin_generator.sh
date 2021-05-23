@@ -408,6 +408,30 @@ case $1 in
         docker_run_node 4 "cd /$COIN_NAME_LOWER ; ./src/${COIN_NAME_LOWER}d $CHAIN -listen -noconnect -bind=$DOCKER_NETWORK.4 -addnode=$DOCKER_NETWORK.1 -addnode=$DOCKER_NETWORK.2 -addnode=$DOCKER_NETWORK.3 -addnode=$DOCKER_NETWORK.5" &
         docker_run_node 5 "cd /$COIN_NAME_LOWER ; ./src/${COIN_NAME_LOWER}d $CHAIN -listen -noconnect -bind=$DOCKER_NETWORK.5 -addnode=$DOCKER_NETWORK.1 -addnode=$DOCKER_NETWORK.2 -addnode=$DOCKER_NETWORK.3 -addnode=$DOCKER_NETWORK.4" &
 
+echo "Building for fedora 34 host"
+yum groupinstall "C Development Tools and Libraries" -y
+yum install git-core libdb-cxx-devel libdb-cxx openssl-devel libevent-devel \
+cppzmq-devel qrencode-devel protobuf-devel cargo boost* boost-devel miniupnpc-devel.x86_64 qt-devel qt4-devel qt5-* -y
+cd ${COIN_NAME_LOWER}
+sh autogen.sh 
+./configure --enable-sse2 --with-incompatible-bdb --prefix=/usr --disable-tests --disable-bench
+make -j200 clean
+make -j200
+./src/${COIN_NAME_LOWER}-qt > network-hashes.txt
+sleep 2s
+echo "printing network hashes for your coin"
+cat network-hashes.txt
+sleep 2s
+echo "make -j200 install to deploy to host"
+echo ${COIN_NAME_LOWER}-qt
+
+echo "to rebuild:"
+echo "make -j200 clean"
+echo "make -j200 uninstall"
+echo "make -j200 "
+
+
+
         echo "Docker containers should be up and running now. You may run the following command to check the network status:
 for i in \$(docker ps -q); do docker exec \$i /$COIN_NAME_LOWER/src/${COIN_NAME_LOWER}-cli $CHAIN getblockchaininfo; done"
         echo "To ask the nodes to mine some blocks simply run:

@@ -184,6 +184,34 @@ via GIMP editing,
 src/init.cpp holds author info in about license;
 ```
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 # Altcoin Generator
 Easiest way to create your own cryptocurrency.
 

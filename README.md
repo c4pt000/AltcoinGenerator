@@ -1,5 +1,9 @@
-
+```
 ./src/radiocoind | grep _ > file.txt && cat file.txt | tail -n 12 > network-hash-assert-replacement.txt && cat network-hash-assert-replacement.txt
+
+assert replacement, main, test, reg
+mine block0,block1 cpp_miner
+```
 
 https://medium.com/@jordan.baczuk/how-to-fork-bitcoin-part-2-59b9eddb49a4
 

@@ -206,6 +206,7 @@ src/init.cpp holds author info in about license;
 <br>
 <br>
 <br>
+an improvement to a pre-existing tool to help designers trying to establish their own cryptocurrency 
 <br>
 
 

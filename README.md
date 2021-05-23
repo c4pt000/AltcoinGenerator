@@ -37,6 +37,7 @@ sh altcoin_generator.sh start
 <br>
 <br>
 
+# build on host
 ```
 yum groupinstall "C Development Tools and Libraries" -y
 yum install git-core libdb-cxx-devel libdb-cxx openssl-devel libevent-devel \

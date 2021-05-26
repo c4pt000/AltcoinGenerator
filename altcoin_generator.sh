@@ -165,7 +165,7 @@ generate_genesis_block()
 
     if [ ! -f ${COIN_NAME}-main.txt ]; then
         echo "Mining genesis block... this procedure might take up to an hour or two.."
-        docker_run_genesis "python /GenesisH0/genesis.py -a scrypt -z \"$PHRASE\" -p $GENESIS_REWARD_PUBKEY 2>&1 | tee /GenesisH0/${COIN_NAME}-main.txt"
+        docker_run_genesis "python /GenesisH0/genesis.py -b 0x1f0fffff -a scrypt -z \"$PHRASE\" -p $GENESIS_REWARD_PUBKEY 2>&1 | tee /GenesisH0/${COIN_NAME}-main.txt"
     else
         echo "Genesis block already mined.."
         cat ${COIN_NAME}-main.txt
@@ -173,7 +173,7 @@ generate_genesis_block()
 
     if [ ! -f ${COIN_NAME}-test.txt ]; then
         echo "Mining genesis block... this procedure might take up to an hour or two.."
-        docker_run_genesis "python /GenesisH0/genesis.py  -t 1486949366 -a scrypt -z \"$PHRASE\" -p $GENESIS_REWARD_PUBKEY 2>&1 | tee /GenesisH0/${COIN_NAME}-test.txt"
+        docker_run_genesis "python /GenesisH0/genesis.py -b 0x1f0fffff -t 1486949366 -a scrypt -z \"$PHRASE\" -p $GENESIS_REWARD_PUBKEY 2>&1 | tee /GenesisH0/${COIN_NAME}-test.txt"
     else
         echo "Genesis block already mined.."
         cat ${COIN_NAME}-test.txt

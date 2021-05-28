@@ -1,8 +1,11 @@
 requires Fedora34/RHEL/CentOS variant
 
 for other notes
+<br>
 see RADIOCOIN.md 
+<br>
 and
+<br>
 https://github.com/c4pt000/AlternativeCryptoCurrencyBuilder-scrypt/blob/master/How%20does%20Mining%20work_%20_%20blockchain_fundamentals.pdf
 
 ```

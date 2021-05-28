@@ -1,0 +1,12 @@
+then 3 network assert
+
+```
+PUBLIC_KEY from sha256 phrase + pubkey 
+epoch time:					 date +%s
+change scrypt if function isnt scrypt "sha256" other etc,
+--------------------------------------------
+
+python genesis.py -a scrypt -z "PHRASE" -p PUBKEY 2>&1 | tee main-network-key.txt
+python genesis.py -t 1486949366 -a scrypt -z "PHRASE" -p PUBKEY 2>&1 | tee test-network-key.txt
+python genesis.py -t 1296688602 -b 0x207fffff -n 0 -a scrypt -z "PHRASE" -p PUBKEY 2>&1 | tee regtest-network-key.txt
+ ```

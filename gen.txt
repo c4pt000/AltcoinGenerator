@@ -1,0 +1,1 @@
+./generate-genesis -algo scrypt -bits 1e0ffff0 -coins 1000000000 -nonce 504365040 -psz "RadioCoin music wallet" 04770ee175cb5530e95cd615c061738719116d871ad9fcc9292ea6b0d396f7d270c12f351ff674b030299b537e9fa062511ac67b8bfc4d68cfcc2fd86158e0e6b3

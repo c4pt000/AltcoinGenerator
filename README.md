@@ -1,5 +1,5 @@
 requires Fedora34/RHEL/CentOS variant
-
+https://www.youtube.com/watch?v=U-IIKVaEhrA
 # https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
 
 for other notes

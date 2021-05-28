@@ -1,5 +1,10 @@
 requires Fedora34/RHEL/CentOS variant
 
+for other notes
+see RADIOCOIN.md 
+and
+https://github.com/c4pt000/AlternativeCryptoCurrencyBuilder-scrypt/blob/master/How%20does%20Mining%20work_%20_%20blockchain_fundamentals.pdf
+
 ```
 ./src/radiocoind | grep _ > file.txt && cat file.txt | tail -n 12 > network-hash-assert-replacement.txt && cat network-hash-assert-replacement.txt
 

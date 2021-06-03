@@ -2,6 +2,9 @@ requires Fedora34/RHEL/CentOS variant
 https://www.youtube.com/watch?v=U-IIKVaEhrA
 # https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR
 
+
+https://jbaczuk.github.io/blockchain_fundamentals/2-Fundamentals/2.5-Mining.html
+
 https://sourceforge.net/projects/unitedrpms/files/32/x86_64/python2-pip-19.1.1-7.fc32.noarch.rpm/download
 
 for other notes

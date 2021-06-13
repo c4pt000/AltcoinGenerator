@@ -30,6 +30,8 @@ CHANGE TO YOUR UNIQUE VALUES AND COMMENT OUT THE DNS SEEDS
 
 SAMPLE REMOTE VPS NODE FOR NEW NETWORK
 ```
+deprecatedrpc=generate
+
 upnp=1
 listen=1
 mempoolexpiry=72

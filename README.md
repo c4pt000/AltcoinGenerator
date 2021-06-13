@@ -25,6 +25,38 @@ CHANGE TO YOUR UNIQUE VALUES AND COMMENT OUT THE DNS SEEDS
         
 ```
 
+SAMPLE REMOTE VPS NODE FOR NEW NETWORK
+```
+upnp=1
+listen=1
+mempoolexpiry=72
+maxmempool=300
+maxorphantx=100
+disablewallet=1
+#prune=2200
+## Spam protection
+limitfreerelay=10
+minrelaytxfee=0.0001
+
+maxconnections=40
+
+server=1
+daemon=1
+
+rpctimeout=30
+rpcport=8332
+rpcconnect=127.0.0.1
+
+#rpcsslciphers=TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH
+#rpcsslcertificatechainfile=server.cert
+#rpcsslprivatekeyfile=server.pem
+
+# Do not use Internet Relay Chat to find peers.
+noirc=0
+minimizetotray=0
+
+```
+
 
 requires Fedora34/RHEL/CentOS variant
 https://www.youtube.com/watch?v=U-IIKVaEhrA

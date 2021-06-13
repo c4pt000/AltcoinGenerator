@@ -56,6 +56,46 @@ noirc=0
 minimizetotray=0
 
 ```
+SAMPLE LOCAL CLIENT CONF FOR NEW WALLET-QT
+
+```
+#prune=2200   
+
+rpcuser=root
+rpcpassword=rpcpassword
+
+rpcport=8332
+rpcallowport=8333
+
+
+rpcconnect=0.0.0.0
+rpcbind=0.0.0.0
+rpcallowip=127.0.0.1
+
+
+            
+dbcache=2048
+maxorphantx=10
+maxmempool=50
+mempoolexpiry=24
+maxconnections=10
+maxuploadtarget=5000
+
+whitelist=0.0.0.0/24
+
+
+
+# change to your new remote VPS node(s)
+addnode=104.237.145.126:9333
+
+
+
+gen=1
+
+daemon=1
+server=1
+
+```
 
 
 requires Fedora34/RHEL/CentOS variant

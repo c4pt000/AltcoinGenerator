@@ -1,3 +1,31 @@
+JUST DOWNLOAD YOUR COIN
+EDIT YOUR COIN ARTWORK AND RENAME YOUR COIN
+THEN CHANGE PCHMESSAGE IN CHAINPARAMS.CPP
+
+
+DOES NOT REQUIRE NEW GENESIS OR MERKLE HASH AT ALL FOR MAIN, TEST, OR REGRESSION NETWORKS
+
+THEN LINK NODES TO DEPLOY YOUR NEW COIN
+
+CHANGE TO YOUR UNIQUE VALUES AND COMMENT OUT THE DNS SEEDS
+```
+  pchMessageStart[0] = 0xee;
+        pchMessageStart[1] = 0xff;
+        pchMessageStart[2] = 0xgg;
+        pchMessageStart[3] = 0xhh;
+        
+        
+        some line in chainparams.cpp
+        
+             // Note that of those with the service bits flag, most only support a subset of possible options
+//vSeeds.push_back(CDNSSeedData("radioblockchain.info", "seed-ns1.radioblockchain.info", true));
+//vSeeds.push_back(CDNSSeedData("radioblockchain.info", "seed-ns2.radioblockchain.info" ));
+//vSeeds.push_back(CDNSSeedData("radioblockchain.info", "seed-ns3.radioblockchain.info" ));
+
+        
+```
+
+
 requires Fedora34/RHEL/CentOS variant
 https://www.youtube.com/watch?v=U-IIKVaEhrA
 # https://github.com/c4pt000/docker-BLOCKCHAIN-GENERATOR

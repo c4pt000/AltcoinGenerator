@@ -1,3 +1,5 @@
+I'm veering towards the coin still needs a unique hash, for mainnet, testnet, reg test ( i was confused from being overtired,) there is no point where getblocktemplate can occur from a new coin minting a few starting blocks as a starting point
+ 
 JUST DOWNLOAD YOUR COIN
 EDIT YOUR COIN ARTWORK AND RENAME YOUR COIN
 THEN CHANGE PCHMESSAGE IN CHAINPARAMS.CPP
